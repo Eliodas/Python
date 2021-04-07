@@ -19,6 +19,7 @@ class Stack:
     def push(self,value):
         self.__elements.append(value)
     
+    @property
     def top(self):
         if len(self.__elements)>0:
             return self.__elements[-1]
